@@ -1,0 +1,59 @@
+// vars
+$images: '../images/';
+$fonts: '../fonts/';
+$fa-font-path: '../fonts/fontawesome';
+
+// fonts
+$iconfont: 'FontAwesome';
+$playfair-display: 'Playfair Display', serif;
+$opensans: 'Open Sans', sans-serif;
+
+
+// colors
+$white: #fff;
+$black: #000;
+$gray: #666666;
+$dark: #111111;
+$dark-gray: #333333;
+$light-dark: rgba($dark-gray, 0.2);
+$orange: #E8BF5D;
+$light-gray: #B9B9B9;
+$middle-gray: #B5B5B5;
+$xlight-gray: rgba($dark-gray, 0.1);
+
+$btn-color: $dark;
+$btn-bg: $orange;
+
+// base vars
+$text-color-base: $gray;
+$text-color-secondary: $white;
+$body-bg: $white;
+$font-family-base: $opensans;
+$font-size-base: 1.4rem;
+$font-size-primary: 1.6rem;
+$font-size-thirdly: 2.1rem;
+$font-weight-base: 400;
+$line-height-base: 3.1rem;
+$line-height-seondary: 2.1rem;
+$line-height-title: 1.474;
+$links-color-base: inherit;
+$headings-font-family: $playfair-display;
+$headings-font-weight: 700;
+$link-hover-color: $orange;
+
+$btn-color: $dark;
+$btn-bg: $orange;
+
+$transition: all .3s ease;
+
+$font-title: $headings-font-family;
+$fs-h1-title: 6.5rem;
+$fs-h2-title: 3.1rem;
+$fs-h3-title: 2.1rem;
+$fs-h4-title: 2rem;
+$fs-h5-title: 1.8rem;
+$fs-h6-title: 1.4rem;
+
+// dev2
+// dev3
+// dev4

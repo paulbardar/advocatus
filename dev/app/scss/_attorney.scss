@@ -1,0 +1,21 @@
+.attorney {
+	padding: 9rem 0 9.4rem;
+	background: url('#{$images}bg-aboutus.jpg') 49% 0 repeat-y;
+	.block-head {
+		margin-bottom: 6.8rem;
+	}
+	.image-block {
+		margin: 0;
+		padding: 0;
+		img {
+			margin-bottom: 1.3rem;
+			@include media("<=phone") {
+				width: 100%;
+			}
+		}
+		h3 {
+			letter-spacing: 0.04rem;
+			line-height: 1.474;
+		}
+	}
+}

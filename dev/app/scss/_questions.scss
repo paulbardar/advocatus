@@ -1,0 +1,92 @@
+.questions {
+	padding: 8.6rem 0 9.8rem;
+	background: $dark url('#{$images}bg-practis.jpg') 48.5% 0 repeat-y;
+	.block-head {
+		margin-bottom: 5.4rem;
+		padding-left: 2rem;
+		h2 {
+			text-transform: none;
+			letter-spacing: 0.1rem;
+		}
+	}
+}
+.questions-block {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 2.3rem;
+	padding-bottom: 7rem;
+	@include media("<=phone") {
+		padding-bottom: 0;
+	}
+}
+.questions-list {
+	width: 48.5%;
+	list-style: none;
+	line-height: 3.1rem;
+	font-weight: bold;
+	color: $white;
+	padding: 0;
+	margin: 0;
+	@include media("<=phone") {
+		width: 100%;
+	}
+	.questions-item {
+		border-bottom: 3px solid $orange;
+		cursor: pointer;
+		padding: 0.8rem 0 0.9rem;
+		padding-right: 0.5rem;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: space-between;
+		letter-spacing: 0.05rem;
+		span {
+			font-size: 1.4rem;
+			line-height: 1.4rem;
+			padding-top: 1.5rem;
+			&:before {
+				content: '\f067';
+				font-family: "Font Awesome 5 Free";
+			}
+		}
+		&.active {
+			color: $orange;
+			span {
+				font-size: 1.4rem;
+				&:before {
+					content: '\f068';
+					font-family: "Font Awesome 5 Free";
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.questions-content {
+	width: 43%;
+	margin: 0;
+	padding: 0;
+	margin-left: 3rem;
+	margin-top: 2rem;
+	list-style: none;
+	color: $dark;
+	@include media("<=phone") {
+		width: 100%;
+		margin-left: 0;
+	}
+	.question-content-item {
+		display: none;
+		height: 100%;
+		padding: 3.2rem 4.7rem;
+		letter-spacing: 0.04rem;
+		line-height: 3.1rem;
+		background: $orange;
+		&.active {
+			display: block;
+		}
+	}
+}

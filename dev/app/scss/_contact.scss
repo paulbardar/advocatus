@@ -1,0 +1,95 @@
+.contact {
+	padding: 9rem 0 7.8rem;
+	background: url('#{$images}bg-aboutus.jpg') 49% 0 repeat-y;
+	.block-head {
+		padding-left: 1.9rem;
+		margin-bottom: 7.7rem;
+		h2 {
+			letter-spacing: 0.1rem;
+		}
+	}
+	.contact-block {
+		max-width: 873px;
+		margin: 0 auto;
+		padding: 4.5rem 4rem 4.9rem 5rem;
+		border-radius: 3px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 1.2rem 4rem 0px rgba(104, 86, 42, 0.1);
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.contact-block-item {
+			margin-left: 3rem;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.contact-block-item {
+			width: 46%;
+			@include media("<=phone") {
+				width: 100%;
+			}
+		}
+		@include media("<=tablet") {
+			width: 100%;
+			padding: 2rem;
+		}
+	}
+	.contact-form {
+		padding-top: 28px;
+		.form-control {
+			width: 100%;
+			border: none;
+			padding: 1rem 0 1rem 0;
+			border-bottom: 1px solid $light-dark;
+			margin-bottom: 2.3rem;
+			&::placeholder,
+			&::-webkit-input-placeholder,
+			&:-ms-input-placeholder,
+			&:-moz-placeholder {
+				color: $light-gray;
+				font-style: italic;
+				font-family: $opensans, sans-serif;
+				letter-spacing: 0.06rem;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+		textarea.form-control {
+			padding-bottom: 2.2rem;
+			resize: vertical;
+			min-height: 100px;
+			margin-bottom: 2.2rem;
+		}
+		.btn {
+			width: auto;
+			color: $dark;
+			font-size: 1.6rem;
+			letter-spacing: 0.03rem;
+			padding: 1.5rem 2.7rem;
+			text-transform: capitalize;
+			@include media("<=phone") {
+				margin-bottom: 30px;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	.contact-map {
+		width: 47%;
+
+		.map-block {
+			max-width: 36.3rem;
+			height: 36.3rem;
+			// background: $gray;
+			box-shadow: -2.6rem 2.4rem 0 0 $orange;
+			@include media("<=phone") {
+				margin: 0 auto;
+			}
+		}
+	}
+}

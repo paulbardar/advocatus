@@ -1,0 +1,47 @@
+.about-us {
+	padding: 8.9rem 0 6.1rem;
+	background: url('#{$images}bg-aboutus.jpg') 49% 0 repeat-y;
+	.block-head {
+		h2 {
+			letter-spacing: 1px;
+		}
+	}
+	.about-us-item {
+		line-height: 3.2rem;
+		h3 {
+			margin-left: -0.5rem;
+			margin-bottom: 2.5rem;
+			line-height: 3.1rem;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none
+		}
+		li {
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			margin-bottom: 3.2rem;
+			margin-left: -0.3rem;
+			padding-top: 0.2rem;
+			line-height: $line-height-seondary;
+			letter-spacing: 0.6px;
+			font-size: $font-size-primary;
+			min-height: 4.5rem;
+			.date{
+				line-height: 2.7rem;
+				font-size: $font-size-thirdly;
+				white-space: nowrap;
+			}
+			p {
+				margin-left: 5rem;
+			}
+		}
+		&.desc {
+			margin-right: 10%;
+		}
+	}
+}

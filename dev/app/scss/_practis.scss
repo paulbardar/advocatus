@@ -1,0 +1,54 @@
+.practis {
+	background: $dark url('#{$images}bg-practis.jpg') 48.5% top repeat-y;
+	padding: 9rem 0 3.5rem;
+	color: $white;
+	.block-head {
+		margin-bottom: 8.8rem;
+		h2 {
+			letter-spacing: 0.2rem;
+		}
+	}
+	.item {
+		padding: 1rem;
+		padding-left: 10rem;
+		margin-bottom: 4.5rem;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		&:nth-child(even) {
+			padding-left: 3.5rem;
+			.item-desc {
+				padding-right: 4.1rem;
+				@include media("<=desktop") {
+					padding-right: 0;
+				}
+			}
+		}
+		@include media("<=desktop") {
+			padding-left: 3rem;
+		}
+		.ico {
+			margin: 0;
+			padding: 0;
+			max-width: 60px;
+			padding-top: 2px;
+		}
+		.item-desc {
+			width: 77%;
+			margin-left: 3rem;
+			line-height: 2.5rem;
+			h3 {
+				line-height: 2.1rem;
+				margin-bottom: 2.5rem;
+				font-weight: 400;
+				text-transform: capitalize;
+				letter-spacing: 0.05rem;
+				&.h3 {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
